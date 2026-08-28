@@ -11,7 +11,7 @@ import { beforeAll, describe, expect, test } from "bun:test";
  * Not part of `bun run test`. It needs a deployment that is actually up, with a licence, a model key
  * and Docker, so it is asked for by name:
  *
- *   bash scripts/start.sh
+ *   bash scripts/start.sh # or .\\scripts\\start.ps1 on Windows
  *   bun run test:smoke
  *
  * `OPENBOT_API_URL` points it at a deployment on other ports. Without `OPENBOT_SMOKE` the file is
@@ -49,7 +49,7 @@ beforeAll(async () => {
     .catch(() => false);
   if (!reachable) {
     throw new Error(
-      `No deployment is answering at ${API}. Start one with \`bash scripts/start.sh\`, or set OPENBOT_API_URL.`,
+      `No deployment is answering at ${API}. Start one with \`bash scripts/start.sh # or .\\scripts\\start.ps1 on Windows\`, or set OPENBOT_API_URL.`,
     );
   }
 });

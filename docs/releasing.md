@@ -91,7 +91,7 @@ start-up, but the journey asserts `licenseStatus` is `valid` and no placeholder 
 So it is a step a person takes, on a machine with a licence, before merging the release PR:
 
 ```sh
-bash scripts/start.sh
+bash scripts/start.sh # or .\scripts\start.ps1 on Windows
 bun run test:smoke
 ```
 

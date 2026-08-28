@@ -11,7 +11,7 @@ cp .env.example .env
 Fill the required values, then run:
 
 ```sh
-bash scripts/start.sh
+bash scripts/start.sh # or .\scripts\start.ps1 on Windows
 ```
 
 ## Required API server variables

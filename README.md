@@ -89,7 +89,7 @@ A Bot is any endpoint speaking [AG-UI](https://github.com/ag-ui-protocol/ag-ui),
 
    ```sh
    bun install
-   bash scripts/start.sh
+   bash scripts/start.sh # or .\scripts\start.ps1 on Windows
    ```
 
 5. Open <http://localhost:3010>.
@@ -322,7 +322,7 @@ bun run --filter server db:generate
 bun run --filter server db:migrate
 ```
 
-Use `bash scripts/start.sh` for the whole stack. Use `bun run dev` only when you want the app and server without the Docker Bots and computers.
+Use `bash scripts/start.sh # or .\scripts\start.ps1 on Windows` for the whole stack. Use `bun run dev` only when you want the app and server without the Docker Bots and computers.
 
 ## Documentation
 

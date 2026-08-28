@@ -24,12 +24,12 @@ Then add `OPENAI_API_KEY`.
 Start the stack:
 
 ```sh
-bash scripts/start.sh
+bash scripts/start.sh # or .\scripts\start.ps1 on Windows
 ```
 
 ## Running services
 
-Use `bash scripts/start.sh` for the full local stack. It starts Docker services, applies migrations, starts the API server and app, and verifies health routes.
+Use `bash scripts/start.sh # or .\scripts\start.ps1 on Windows` for the full local stack. It starts Docker services, applies migrations, starts the API server and app, and verifies health routes.
 
 Use `bun run dev` only when you want the app and API server without starting the Docker Bots and computers.
 
@@ -110,7 +110,7 @@ CI uses `bun run test:ci` to verify the expected test count in addition to norma
 `bun run test:smoke` is separate and needs a deployment that is up:
 
 ```sh
-bash scripts/start.sh
+bash scripts/start.sh # or .\scripts\start.ps1 on Windows
 bun run test:smoke
 ```
 
